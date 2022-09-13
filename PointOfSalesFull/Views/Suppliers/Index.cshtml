@@ -1,0 +1,96 @@
+﻿@model IEnumerable<PointOfSalesFull.Models.Supplier>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <h2 align="center" class="panel-title ">
+                <strong style="text-align:center;color:red;font:bolder">الموردون</strong>
+            </h2>
+
+            <p class="btn btn-default pull-right" style="margin-right:10px;color:white">
+                @Html.ActionLink("اضافة مورد", "Create")
+            </p>
+        </div>
+    </div>
+    <table class="table">
+        <tr>
+            <th>
+                الاسم  عربى
+            </th>
+            <th>
+                الاسم انجليزى
+            </th>
+            <th>
+                البريد الالكترونى
+            </th>
+            <th>
+                الهاتف
+            </th>
+            <th>
+                العنوان
+            </th>
+            <th>
+                الجنسية
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sub_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sub_EName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sub_Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sub_Phon)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sub_Adress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nat_ID)
+                </td>
+                <td>
+                    @Html.ActionLink("تعديل", "Edit", new { id = item.Sub_ID }) |
+                    @Html.ActionLink("تفاصيل", "Details", new { id = item.Sub_ID }) |
+                    @Html.ActionLink("حذف", "Delete", new { id = item.Sub_ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+    <div class="panel-footer">
+        <div class="row">
+            <a id="reportpdf" class="report" href="#" onclick="Exatractreport('Pdf')"></a>
+            <a id="reportexel" class="report" href="#" onclick="Exatractreport('Excel')"></a>
+
+            <a id="reportWord" class="report" href="#" onclick="Exatractreport('Word')"></a>
+
+            <a id="reportImage" class="report" href="#" onclick="Exatractreport('Image')"></a>
+        </div>
+    </div>
+</div>
+<script>
+    function Exatractreport(Type) {
+
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("ExportReport", "Suppliers")',
+                dataType: 'html',
+                data: ({
+                    ReportType: Type
+                })
+            });
+
+        }
+</script>

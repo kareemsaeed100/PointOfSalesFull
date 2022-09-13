@@ -1,0 +1,81 @@
+﻿@model PointOfSalesFull.Models.Customer
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>حذف عميل</h2>
+
+<h3>هل انت متأكد من الحذف؟</h3>
+<div>
+  
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            الاسم الاول عربى
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.First_Name)
+        </dd>
+
+        <dt>
+            اسم العائلة عربى
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Last_Name)
+        </dd>
+
+        <dt>
+            الاسم الاول انجليزى
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.First_EName)
+        </dd>
+
+        <dt>
+            اسم العائلة انجليزى
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Last_EName)
+        </dd>
+        <dt>
+            اسم الجنسية
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nat_ID)
+        </dd>
+        <dt>
+            رقم الهاتف
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phon)
+        </dd>
+
+        <dt>
+            البريد الالكترونى
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="حذف" class="btn btn-default" /> |
+            @Html.ActionLink("الرجوع الى القائمة", "Index")
+        </div>
+    }
+</div>

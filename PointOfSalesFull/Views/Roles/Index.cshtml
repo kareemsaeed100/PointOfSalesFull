@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Microsoft.AspNet.Identity.EntityFramework.IdentityRole>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <h2 align="center" class="panel-title ">
+                <strong style="text-align:center;color:red;font:bolder">الصلاحيات</strong>
+            </h2>
+
+            <p class="btn btn-default pull-right" style="margin-right:10px;color:white">
+                @Html.ActionLink("اضافة صلاحية", "Create")
+            </p>
+            </div>
+        </div>
+            <table class="table">
+                <tr>
+                    <th>
+                        اسم الصلاحية
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+
+                        </td>
+                        <td>
+                            @Html.ActionLink("تعديل", "Edit", new { id = item.Id }) |
+                            @Html.ActionLink("تفاصيل", "Details", new { id = item.Id }) |
+                            @Html.ActionLink("حذف", "Delete", new { id = item.Id })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+    </div>

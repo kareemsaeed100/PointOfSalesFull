@@ -1,0 +1,255 @@
+﻿@model PointOfSalesFull.Models.AccVchrs
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+@using (Html.BeginForm("Create", "AccVchrs", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>انشاء سند</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2 ">
+                التاريخ
+            </label>
+            <div class="col-md-10">
+                <input dir="ltr" placeholder="اختر التاريخ" name="vch_DatG" type="date" id="date-picker-example" class="form-control datepicker">
+                @*@Html.EditorFor(model => model.vch_DatG, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.vch_DatG, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                اسم الفرع
+            </label>
+            <div class="col-md-10">
+
+                @Html.DropDownList("vch_Brn", null, "اختر اسم الفرع", htmlAttributes: new { @id = "BranchName", @name = "vch_Brn", @class = "DropDown col-md-12" })
+                @Html.ValidationMessageFor(model => model.vch_Brn, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                اسم المورد
+            </label>
+            <div class="col-md-10">
+                @Html.DropDownList("Vch_SubNum", null, "اختر اسم المورد", htmlAttributes: new { @id = "SubNum", @name = "Vch_SubNum", @class = "DropDown col-md-12" })
+                @Html.ValidationMessageFor(model => model.Vch_SubNum, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                رقم الفاتورة
+            </label>
+            <div class="col-md-10">
+                @*<input style="align-content:center" type="text" id="myInput" class="form-control" onkeyup="Search()" placeholder="ابحث برقم الفاتورة..">*@
+                @*@Html.ValidationMessageFor(model => model.vch_paymod, "", new { @class = "text-danger" })*@
+
+                <select id="PureInvoice" name="Vch_PurNum" class="DropDown col-md-12">
+                    <option value="">اختر رقم الفاتورة</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                المطلوب سداده
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.vch_Wanted, new { htmlAttributes = new { @id = "wantedVal", @readonly = true, @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.vch_Wanted, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                1اسلوب الدفع
+            </label>
+            <div class="col-md-10">
+                @Html.DropDownList("vch_paymod1", null, "اختر اسلوب الدفع", htmlAttributes: new { @name = "vch_paymod1", @id = "paymod1", @class = "DropDown col-md-12 " })
+                @Html.ValidationMessageFor(model => model.vch_paymod1, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                القيمة
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.vch_Paid1, new { htmlAttributes = new { @id = "paid1", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.vch_Paid1, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                2اسلوب الدفع
+            </label>
+            <div class="col-md-10">
+                @Html.DropDownList("vch_paymod2", null, "اختر اسلوب الدفع", htmlAttributes: new { @name = "vch_paymod2", @id = "paymod2", @class = "DropDown col-md-12 " })
+                @Html.ValidationMessageFor(model => model.vch_paymod2, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                القيمة
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.vch_Paid2, new { htmlAttributes = new { @id = "paid2", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.vch_Paid2, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                رقم الكارد
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.vch_cardnum, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.vch_cardnum, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                المتبقى
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.vch_Remind, new { htmlAttributes = new { @id = "Remind", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.vch_Remind, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="حفظ" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("الرجوع الى القائمة", "Index")
+</div>
+@section scripts{
+    <script>
+
+        $("#SubNum").change(function () {
+
+            var subid = (parseInt)($("#SubNum").val());
+        GetPurelist(subid);
+    });
+    $("#PureInvoice").on("change", function () {
+        //Getting Value
+        var Pur_Id = $("#PureInvoice").val();
+        //Setting Value
+        GetPureValue(Pur_Id);
+    });
+    var Remind = 0.0;
+    $("#wantedVal,#paid1,#paid2").keyup(function () {
+
+        var paid1 = $("#paid1").val();
+        var paid2 = $("#paid2").val();
+        var wantedVal = $("#wantedVal").val();
+        if (paid1 == "")
+        {
+            paid1 = 0.0;
+        }
+        if (paid2 == "") {
+            paid2 = 0.0;
+        }
+        if (wantedVal == "") {
+            wantedVal = 0.0;
+        }
+         Remind = wantedVal -( paid1+paid2);
+
+    });
+    $("#paid1,#paid2").keyup(function () {
+
+        var paid1 = $("#paid1").val();
+        var paid2 = $("#paid2").val();
+        var wantedVal = $("#wantedVal").val();
+        if (paid1 == "") {
+            paid1 = 0.0;
+        }
+        if (paid2 == "") {
+            paid2 = 0.0;
+        }
+        if (wantedVal == "") {
+            wantedVal = 0.0;
+        }
+        Remind = wantedVal - (paid1 + paid2);
+        $("#Remind").val(Remind);
+    });
+    function GetPurelist(Sub_ID) {
+        var totalBill = 0.0;
+        var PureInvoice = $("#PureInvoice");
+        $.get("/AccVchrs/GetPurelist?Sub_ID=" + Sub_ID, null, DataBind2)
+        function DataBind2(OrderList2) {
+            if (OrderList2.length > 0) {
+                for (var i = 0; i < OrderList2.length; i++) {
+                    totalBill = totalBill + OrderList2[i].Total;
+                    var Data = "<option value=" + OrderList2[i].Order_Id + ">" + OrderList2[i].Order_Id + "</option> ";
+                    PureInvoice.append(Data);
+                }
+            }
+        }
+    }
+    function GetPureValue(Pur_Id) {
+        var cr = 0.0;
+        var dr = 0.0;
+        $.get("/AccVchrs/GetPureValue?Pur_Id=" + Pur_Id, null, DataBind2)
+        function DataBind2(OrderList2) {
+            if (OrderList2.length > 0) {
+                for (var i = 0; i < OrderList2.length; i++) {
+                    cr = cr + OrderList2[i].cr;
+                    dr = dr + OrderList2[i].dr;
+                }
+                $("#wantedVal").val(cr-dr);
+            }
+        }
+    }
+
+
+    function saveOrder(data) {
+        return $.ajax({
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            type: 'POST',
+            url: "/AccVchrs/SaveAccVchr",
+            data: data,
+            success: function (result) {
+                alert(result);
+                location.reload();
+            },
+            error: function () {
+                alert("Error!")
+            }
+        });
+    }
+    //Collect Multiple Order List For Pass To Controller
+    $("#saveOrder").click(function (e) {
+        e.preventDefault();
+        var paid1 = $("#paid1").val();
+        var paid2 = $("#paid2").val();
+        var wantedVal = $("#wantedVal").val();
+        if (paid1 == "") {
+            paid1 = 0.0;
+        }
+        if (paid2 == "") {
+            paid2 = 0.0;
+        }
+        if (wantedVal == "") {
+            wantedVal = 0.0;
+        }
+        var Remind = wantedVal - paid;
+        if ((paid1+paid2) > wantedVal) {
+            return;
+            $("#Remind").val(wantedVal);
+        }
+
+
+    });
+    </script>
+}

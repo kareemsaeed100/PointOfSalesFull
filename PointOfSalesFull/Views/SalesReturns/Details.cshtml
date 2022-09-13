@@ -1,0 +1,59 @@
+﻿@model PointOfSalesFull.Models.SalesReturn
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>تفاصيل</h2>
+
+<div>
+    <h4>SalesReturn</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.First_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer.First_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Saller.Saler_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Saller.Saler_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SalesR_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SalesR_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pay_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pay_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Brn_Num)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brn_Num)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("تعديل", "Edit", new { id = Model.SalesR_ID }) |
+    @Html.ActionLink("الرجوع الى القائمة", "Index")
+</p>

@@ -1,0 +1,28 @@
+﻿@model Microsoft.AspNet.Identity.EntityFramework.IdentityRole
+
+<h3>هل انت متأكد من الحذف؟</h3>
+<div>
+    <h4>حذف الصلاحية</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+           اسم الصلاحية
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="حذف" class="btn btn-default" /> |
+            @Html.ActionLink("الرجوع الى القائمة", "Index")
+        </div>
+    }
+</div>
+

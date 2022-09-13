@@ -1,0 +1,42 @@
+﻿@model PointOfSalesFull.Models.PayMode
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>تفاصيل</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            الاسم  عربى
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pay_Name)
+        </dd>
+
+        <dt>
+            الاسم  انجليزى
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pay_EName)
+        </dd>
+
+        <dt>
+            الحساب
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pay_Acc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("تعديل", "Edit", new { id = Model.Pay_ID }) |
+    @Html.ActionLink("الرجوع الى القائمة", "Index")
+</p>

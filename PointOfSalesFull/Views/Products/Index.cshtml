@@ -1,0 +1,125 @@
+﻿@model IEnumerable<PointOfSalesFull.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <h2 align="center" class="panel-title ">
+                <strong style="text-align:center;color:red;font:bolder">المنتجات</strong>
+            </h2>
+
+            <p class="btn btn-default pull-right" style="margin-right:10px;color:white">
+                @Html.ActionLink("انشاء منتج", "Create")
+            </p>
+        </div>
+    </div>
+    <table class="table">
+        <tr>
+            <th>
+                الفئة
+            </th>
+            <th>
+                المنج
+            </th>
+            <th>
+                الكمية
+            </th>
+            <th>
+                السعر
+            </th>
+            <th>
+                الصورة
+            </th>
+            <th>
+                الماركة
+            </th>
+            <th>
+                وحدة القياس
+            </th>
+            <th>
+                قابل للبيع
+            </th>
+            <th>
+                خاضع للضريبة
+            </th>
+            <th>
+                قابل للارجاع
+            </th>
+            <th>
+                حركة المنتج
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.category.Cat_Descrption)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Product_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quintity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Image)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Brand_Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Uint_Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.For_Sale)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tax_State)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Return)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mov_State)
+                </td>
+                <td>
+                    @Html.ActionLink("تعديل", "Edit", new { id = item.Product_ID }) |
+                    @Html.ActionLink("تفاصيل", "Details", new { id = item.Product_ID }) |
+                    @Html.ActionLink("حذف", "Delete", new { id = item.Product_ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+    <div class="panel-footer">
+        <div class="row">
+            <a id="reportpdf" class="report" href="#" onclick="Exatractreport('Pdf')"></a>
+            <a id="reportexel" class="report" href="#" onclick="Exatractreport('Excel')"></a>
+
+            <a id="reportWord" class="report" href="#" onclick="Exatractreport('Word')"></a>
+
+            <a id="reportImage" class="report" href="#" onclick="Exatractreport('Image')"></a>
+        </div>
+    </div>
+</div>
+<script>
+    function Exatractreport(Type) {
+
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("ExportReport", "Products")',
+                dataType: 'html',
+                data: ({
+                    ReportType: Type
+                })
+            });
+
+        }
+</script>

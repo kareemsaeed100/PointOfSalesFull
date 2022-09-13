@@ -1,0 +1,104 @@
+﻿@model IEnumerable<PointOfSalesFull.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <h2 align="center" class="panel-title ">
+                <strong style="text-align:center;color:red;font:bolder">العملاء</strong>
+            </h2>
+
+            <p class="btn btn-default pull-right" style="margin-right:10px;color:white">
+                @Html.ActionLink("انشاء عميل", "Create")
+            </p>
+        </div>
+    </div>
+    <table class="table">
+        <tr>
+            <th>
+                الاسم الاول عربى
+            </th>
+            <th>
+                اسم العائلة عربى
+            </th>
+            <th>
+                الاسم الاول انجليزى
+            </th>
+            <th>
+                اسم العائلة انجليزى
+            </th>
+            <th>
+                اسم الجنسية
+            </th>
+            <th>
+                رقم الهاتف
+            </th>
+            <th>
+                البريد الالكترونى
+            </th>
+
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.First_Name)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Last_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.First_EName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Last_EName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nat_ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phon)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.ActionLink("تعديل", "Edit", new { id = item.Customes_ID }) |
+                    @Html.ActionLink("تفاصيل", "Details", new { id = item.Customes_ID }) |
+                    @Html.ActionLink("حذف", "Delete", new { id = item.Customes_ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+    <div class="panel-footer">
+        <div class="row">
+            <a id="reportpdf" class="report" href="#" onclick="Exatractreport('Pdf')"></a>
+            <a id="reportexel" class="report" href="#" onclick="Exatractreport('Excel')"></a>
+
+            <a id="reportWord" class="report" href="#" onclick="Exatractreport('Word')"></a>
+
+            <a id="reportImage" class="report" href="#" onclick="Exatractreport('Image')"></a>
+        </div>
+    </div>
+</div>
+<script>
+    function Exatractreport(Type) {
+
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("ExportReport", "Customers")',
+                dataType: 'html',
+                data: ({
+                    ReportType: Type
+                })
+            });
+
+        }
+</script>

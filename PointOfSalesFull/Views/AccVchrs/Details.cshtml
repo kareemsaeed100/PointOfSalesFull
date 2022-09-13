@@ -1,0 +1,83 @@
+﻿@model PointOfSalesFull.Models.AccVchrs
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AccVchr</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.vch_Brn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vch_Brn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vch_DatG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vch_DatG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vch_typ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vch_typ)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vch_paymod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vch_paymod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vch_cardnum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vch_cardnum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vch_Paid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vch_Paid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vch_Wanted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vch_Wanted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vch_Remind)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vch_Remind)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.vch_num }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

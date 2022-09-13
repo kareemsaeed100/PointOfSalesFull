@@ -1,0 +1,48 @@
+﻿@model PointOfSalesFull.Models.PayMode
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>حذف اسلوب الدفع</h2>
+
+<h3>هل انت متأكد من الحذف؟</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            الاسم  عربى
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pay_Name)
+        </dd>
+
+        <dt>
+            الاسم  انجليوى
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pay_EName)
+        </dd>
+
+        <dt>
+            اسم الحساب
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pay_Acc)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="حذف" class="btn btn-default" /> |
+            @Html.ActionLink("الرجوع الى القائمة", "Index")
+        </div>
+    }
+</div>

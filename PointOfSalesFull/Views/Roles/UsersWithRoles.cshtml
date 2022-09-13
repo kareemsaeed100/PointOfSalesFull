@@ -1,0 +1,68 @@
+﻿@model IEnumerable<PointOfSalesFull.Models.Users_in_Role_ViewModel>
+
+@{
+    ViewBag.Title = "Users With Roles";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+<p>
+    <h4>@Html.ActionLink("انشاء مستخدم جديد", "Register", "Account")</h4>
+</p>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="box-title">
+            <b>المستخدمين</b>
+        </h3>
+     
+       
+    </div>
+    <!-- /.box-header -->
+    <div class="panel-body">
+        <table class="table table-hover table-bordered table-condensed" id="example1">
+            <thead>
+                <tr>
+                    <td><b>اسم المستخدم</b></td>
+                    <td><b>البريد الالكترونى</b></td>
+                    @*<td><b>Roles</b></td>*@
+                </tr>
+            </thead>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Username</td>
+                    <td>@user.Email</td>
+                    @*<td>@user.Role</td>*@
+                    <td>
+                        @*@Html.ActionLink("تعديل", "EditProfile", "Account", new { id = user.UserId }, null)|*@
+                        @Html.ActionLink("تعديل", "EditProfile", new { id = user.UserId }) |
+                       @Html.ActionLink("تفاصيل", "Details", new { id = user.UserId }) |
+                        @Html.ActionLink("حذف", "Delete", new { id = user.UserId })
+                    </td>
+
+
+
+                </tr>
+            }
+        </table>
+    </div>
+
+    <div class="panel-footer">
+        <p class="box-title"><b>عدد المستخدمين   @String.Format("{0 : dddd, MMMM d, yyyy}", DateTime.Now)  : </b><span class="label label-primary">@Model.Count()</span><b>حتى تاريخ</b></p>
+    </div>
+</div>
+
+
+@*@section scripts{
+        <script>
+            $(function () {
+                $("#example1").DataTable();
+                $('#example2').DataTable({
+                    "paging": true,
+                    "lengthChange": true,
+                    "searching": true,
+                    "ordering": true,
+                    "info": true,
+                    "autoWidth": true
+                });
+            });
+        </script>
+    }*@

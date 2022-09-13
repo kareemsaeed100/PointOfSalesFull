@@ -1,0 +1,167 @@
+﻿@model PointOfSalesFull.Models.Defination
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>اضافة تعريفات</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                حساب العميل
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AccCustomer, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AccCustomer, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                حساب النقدية
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AccCash, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AccCash, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                حساب ايرادات المبيعات
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AccSalesRevenues, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AccSalesRevenues, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                حساب الضريبة
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AccTax, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AccTax, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                حساب تكلفة المبيعات
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AccSalesCost, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AccSalesCost, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                حساب المخزون
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AccInv, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AccInv, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                حساب البنك
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AccBank, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AccBank, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                حساب المورد
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AccSublier, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AccSublier, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                فاتورة المشتريات
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PureAcc, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PureAcc, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                فاتورة مرتجعات المشتريات
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PureRAcc, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PureRAcc, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                فاتورة المبيعات
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SalesAcc, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SalesAcc, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                فاتورة مرتجعات المبيعات
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SalesRAcc, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SalesRAcc, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+              سند قبض
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ReciptAcc, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ReciptAcc, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                سند صرف
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PayMentAcc, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PayMentAcc, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="حفظ" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("الرجوع الى القائمة", "Index")
+</div>

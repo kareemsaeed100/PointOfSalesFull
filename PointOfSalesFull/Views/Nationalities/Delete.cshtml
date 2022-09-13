@@ -1,0 +1,43 @@
+﻿@model PointOfSalesFull.Models.Nationality
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+<h2 align="center" class="panel-title ">
+    <strong style="text-align:center;color:red;font:bolder">حذف جنسية</strong>
+</h2>
+
+
+<h3>هل انت متأكد من الحذف؟</h3>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            اسم الجنسية عربى
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nat_Name)
+        </dd>
+
+        <dt>
+            اسم الجنسية انجليزى
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nat_EName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="حذف" class="btn btn-default" /> |
+            @Html.ActionLink("الرجوع الى القائمة", "Index")
+        </div>
+    }
+</div>

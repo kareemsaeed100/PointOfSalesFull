@@ -1,0 +1,40 @@
+﻿@model PointOfSalesFull.Models.Department
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>حذف القسم</h2>
+
+<h3>هل انت متأكد من الحذف؟</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            اسم القسم عربى
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deb_Name)
+        </dd>
+
+        <dt>
+            اسم القسم انجليزى
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deb_EName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="حذف" class="btn btn-default" /> |
+            @Html.ActionLink("الرجوع الى القائمة", "Index")
+        </div>
+    }
+</div>

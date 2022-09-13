@@ -1,0 +1,35 @@
+﻿@model PointOfSalesFull.Models.Units
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>تفاصيل</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Unit_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unit_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Unit_EName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unit_EName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("تعديل", "Edit", new { id = Model.Unit_ID }) |
+    @Html.ActionLink("الرجوع الى القائمة", "Index")
+</p>

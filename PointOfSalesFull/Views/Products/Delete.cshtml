@@ -1,0 +1,112 @@
+﻿@model PointOfSalesFull.Models.Product
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>حذف المنج</h2>
+
+<h3>هل انت متأكد من الحذف؟</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            الفئة
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category.Cat_Descrption)
+        </dd>
+
+        <dt>
+          اسم المنتج
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product_Name)
+        </dd>
+
+        <dt>
+          الكمية
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quintity)
+        </dd>
+
+        <dt>
+          السعر
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+          صورة المنج
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+
+        <dt>
+      الماركة
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brand_Id)
+        </dd>
+
+        <dt>
+           وحدة القياس
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Uint_Id)
+        </dd>
+
+        <dt>
+            قابل للبيع
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.For_Sale)
+        </dd>
+
+        <dt>
+            خاضع للضريبة
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tax_State)
+        </dd>
+
+        <dt>
+            قابل للارجاع
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Return)
+        </dd>
+
+        <dt>
+            توقيف المنتج
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mov_State)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="حذف" class="btn btn-default" /> |
+            @Html.ActionLink("الرجوع الى القائمة", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,1116 @@
+﻿
+
+<br /><br />
+
+<div class="panel panel-default">
+    @*عرض الفواتير*@
+    <div class="panel-heading">
+        <div class="row">
+            <h2 align="center" class="panel-title ">
+                    <strong style="color:red; font:bold;text-align:center">فاتورة مرتجعات المبيعات</strong>
+            </h2>
+
+            <button style="margin-right:10px" class="btn btn-primary pull-right" onclick="addNewOrder()">ْْانشاء فاتورة</button>
+
+
+            <div style="align-content:center">
+                <input style="align-content:center" type="text" id="myInput" class="form-control" onkeyup="Search()" placeholder="ابحث برقم الفاتورة..">
+                @*<button style="margin-right:10px" class="btn btn-primary pull-right" onclick="Search()">ْْبحث</button>*@
+            </div>
+
+
+        </div>
+        @*show max invoice*@
+        <div id="showmax" style="display:none" class="panel-body">
+            <table class="table table-striped table-responsive">
+                <tbody>
+                    <tr id="invoichead"></tr>
+                    <tr>
+                        <td  colspan="5">
+                            <table class="table table-bordered">
+                                <tbody id="invoicDetailes"></tbody>
+                            </table>
+                            <div id="totalbody"> </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+    </div>
+    @*تعديل الفواتير*@
+    <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                    <h4 class="modal-title custom_align" id="Heading">تعديل الصنف</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="hidden" id="Order_D_key" name="Order_D_key" placeholder="Product Name" class="form-control" />
+                        <label class="control-label col-md-2">
+                            اسم الصنف
+                        </label>
+                        <input type="text" id="productNameEdit" name="Product_ID" readonly placeholder="Product Name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2">
+                            سعر الوحدة
+                        </label>
+                        <input type="number" id="priceEdit" name="Price" placeholder="0" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2">
+                            الكمية
+                        </label>
+                        <input type="number" id="quintityEdit" name="Quintity" placeholder="0" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2">
+                            السعر
+                        </label>
+                        <input type="number" id="amountEdit" readonly name="Amount" placeholder="0" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2">
+                            الخصم
+                        </label>
+                        <input type="number" id="discountEdit" name="discount" placeholder="0" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2">
+                            الضريبة
+                        </label>
+                        <input type="number" id="taxEdit" readonly name="Tax" placeholder="0" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2">
+                            الاحمالى
+                        </label>
+                        <input type="number" id="totalEdit" readonly name="Total" placeholder="0" class="form-control" />
+                    </div>
+
+                </div>
+                <div class="modal-footer ">
+                    <button type="button" onclick="SaveUpdateProduct()" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> حفظ</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    @*انشاء فاتورة جديدة*@
+
+    <div class="modal fade" id="newOrderModal">
+        <div class="modal-dialog modal-lg" style=" width 900px !important;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" class="close" data-dismiss="modal">&times;</a>
+                    <h4 style="color:red; font:bold" align="center">أضافة فاتورة جديدة</h4>
+                </div>
+                <form id="NewOrderForm">
+                    <div class="modal-body">
+                        <div class="form-horizontal">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-4">
+                                        تاريخ الفاتورة
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input dir="rtl" placeholder="اختر التاريخ" name="vch_DatG" type="date" id="date-picker-example" class="form-control datepicker">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="col-md-6" id="HeadReturn1">
+                                @*<h4 style="color:#ff6347"><b>البائع</b> </h4>*@
+                                <input type="hidden" id="Saller_ID" />
+                                <div class="form-group">
+                                    <label class="control-label col-md-4">
+                                        اسم البائع
+                                    </label>
+                                    <div class="col-md-6">
+
+                                        <input readonly type="text" id="sallername" name="Saler_Name" placeholder="اسم البائع" class="form-control" />
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="col-md-6" id="HeadReturn2">
+                                @*<h4 style="color:#ff6347"><b>العميل</b> </h4>*@
+                                <input type="hidden" id="CustomerId" />
+                                <div class="form-group">
+                                    <label class="control-label col-md-4">
+                                        اسم العميل
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input readonly type="text" id="name" name="First_Name" placeholder="اسم العميل" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="col-md-6">
+                                @*<h4 style="color:#ff6347"><b>الفرع</b> </h4>*@
+                                <input type="hidden" id="Branch_ID" />
+                                <div class="form-group">
+                                    <label class="control-label col-md-4">
+                                        اسم الفرع
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input readonly type="text" id="BranchName" name="BranchName" placeholder="اسم الفرع" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        @*Order Details*@
+                        <h4 style="margin-top:10px;color:#ff6347"><b>فاتورة المشتريات</b></h4>
+                        <input  style="align-content:center" type="text" id="myInputReturn" class="form-control" onkeyup="SearchReturn()" placeholder="ادخل رقم الفاتورة..">
+                        <div class="form-horizontal">
+
+                            <table id="detailsTableReturn" class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="width:25%">الصنف</th>
+                                        <th style="width:10%">الكمية</th>
+                                        <th style="width:15%">سعر الوحدة</th>
+                                        <th style="width:15%">السعر</th>
+                                        <th style="width:10%">الخصم</th>
+                                        <th style="width:10%">الضريبة</th>
+                                        <th style="width:25%">الاجمالى</th>
+                                        <th style="width:10%">تعديل</th>
+                                        <th style="width:20%">حذف</th>
+                                        <th style="width:10%"></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <label id="" style="color:red" class="control-label col-md-4">
+                            <b style="font:bold" class="btn-group">المطلوب ارجاعه</b>
+                        </label>
+                        <input style="color:red" readonly class="form-control col-md-4" id="wantedVal" type="text" value="0" />
+                        <hr />
+                        @*payment Details*@
+                        <div class="col-md-6">
+                            @*<h4 style="color:#ff6347"><b>اسلوب الدفع</b> </h4>*@
+                            <input type="hidden" id="Pay_ID1" />
+                   
+                            <hr />
+                            <div class="form-group">
+                                <label class="control-label col-md-4">
+                                    اسلوب الدفع1
+                                </label>
+                                <div class="col-md-6">
+
+                                    @Html.DropDownList("PayMode", null, htmlAttributes: new { @id = "PayName1", @class = "DropDown col-md-10" })
+                                    <label class="control-label col-md-4">
+                                        القيمة
+                                    </label>
+                                    <input type="number" id="Pay1Val" value="0" name="Pay1Val" placeholder="0" class="form-control col-md-12" />
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <hr />
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-4">
+                                    اسلوب الدفع2
+                                </label>
+                                <div class="col-md-6">
+                                    @Html.DropDownList("PayMode", null, htmlAttributes: new { @id = "PayName2", @class = "DropDown col-md-10" })
+                                    <label class="control-label col-md-4">
+                                        القيمة
+                                    </label>
+                                    <input type="number" id="Pay2Val" value="0" name="Pay2Val" placeholder="0" class="form-control col-md-12" />
+                                
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <button type="reset" class="btn btn-default" data-dismiss="modal">خروج</button>
+                        <button id="SaveSalesReturn"  type="submit" class="btn btn-danger">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    @*حذف المنتج*@
+    <div class="modal fade" id="DeleteConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" class="close" data-dismiss="modal">&times;</a>
+                    <h4>حذف المنتج من الفاتورة</h4>
+                </div>
+                <div class="modal-body">
+                    <h4>هل انت متأكد من حذف المنتج.</h4>
+                </div>
+                <div class="modal-fooحذف الفاتورةter">
+                    <a href="#" class="btn btn-primary" data-dismiss="modal" id="r">الغاء</a>
+                    <a href="#" class="btn btn-danger" onclick="ConfirmDelete()">تأكيد</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*حذف الفاتورة*@
+    <div class="modal fade" id="DeleteConfirmationInvoic">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" class="close" data-dismiss="modal">&times;</a>
+                    <h4>حذف  الفاتورة</h4>
+                </div>
+                <div class="modal-body">
+                    <h4>هل انت متأكد من حذف الفاتورة.</h4>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-primary" data-dismiss="modal" id="r">الغاء</a>
+                    <a href="#" class="btn btn-danger" onclick="ConfirmDeleteInvoice()">تأكيد</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*تعديل صنف من فاتورة مرتجعات*@
+    <div class="modal fade" id="editReturn" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                    <h4 class="modal-title custom_align" id="Heading">تعديل الصنف</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="hidden" id="Order_D_keyReturn" name="Order_D_key" placeholder="Product Name" class="form-control" />
+                        <input type="hidden" id="productIdEditReturn" name="Product_Id" placeholder="Product_Id Name" class="form-control" />
+                        <label class="control-label col-md-2">
+                            اسم الصنف
+                        </label>
+                        <input  type="text" id="productNameEditReturn" name="Product_ID" readonly placeholder="Product Name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2">
+                            سعر الوحدة
+                        </label>
+                        <input type="number" id="priceEditReturn" name="Price" placeholder="0" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2">
+                            الكمية
+                        </label>
+                        <input type="number" id="quintityEditReturn"  name="Quintity" placeholder="0" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2">
+                            السعر
+                        </label>
+                        <input type="number" id="amountEditReturn" readonly name="Amount" placeholder="0" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2">
+                            الخصم
+                        </label>
+                        <input type="number" id="discountEditReturn" name="discount" readonly placeholder="0" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2">
+                            الضريبة
+                        </label>
+                        <input type="number" id="taxEditReturn" readonly name="Tax" placeholder="0" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2">
+                            الاحمالى
+                        </label>
+                        <input type="number" id="totalEditReturn" readonly name="Total" placeholder="0" class="form-control" />
+                    </div>
+
+                </div>
+                <div class="modal-footer ">
+                    <button type="button" onclick="SaveUpdateProductReturn()" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> حفظ</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <div id="empity" class="panel-body">
+        <h3 style="color:red;">فارغ!</h3>
+    </div>
+
+</div>
+@section scripts{
+    @*<script src="~/Scripts/jquery-1.10.2.js"></script>
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>*@
+    <script>
+        clearPage();
+        //to grt maxmium return invoice
+        getmax1();
+        getmax2();
+
+        //to grt  return invoice which user search
+        function Search()
+        {
+            getmax1();
+            getmax2();
+
+
+        }
+
+
+        //to gEt  sales invoice which user search to return it
+        function SearchReturn() {
+            GetReturnHead();
+            GetReturnDet();
+        }
+        function GetReturnHead() {
+            $("#invoichead").empty();
+            $("#sallername").val("");
+            $("#name").val("");
+            $("#BranchName").val("");
+            var order_num = $("#myInputReturn").val();
+
+            if (order_num > 0) {
+                $.get("/SalesInvoices/GetordersHeadSearch?order_num=" + order_num, null, DataBind)
+                $("#invoichead").empty();
+            
+
+            function DataBind(OrderList1) {
+                //var indexBody = $("#invoichead");
+                if (OrderList1.length > 0) {
+                    for (var i = 0; i < OrderList1.length; i++) {
+                        $("#sallername").val(OrderList1[i].Saler_Name);
+                        $("#name").val(OrderList1[i].First_Name);
+                        $("#BranchName").val(OrderList1[i].BranchName);
+                    }
+
+                    $("#showmax").show();
+                    $("#empity").hide();
+                }
+                else
+                    {
+                    $("#empity").show();
+                    $("#invoichead").empty();
+                    $("#sallername").val("");
+                    $("#name").val("");
+                    $("#BranchName").val("");
+                }
+
+            }
+            }
+            else
+            {
+                $("#invoichead").empty();
+            }
+        }
+        function GetReturnDet() {
+           
+
+            var totalBill = 0.0;
+            var totalbody = $("#totalbody");
+            var order_Id;
+            var wantedVal = 0;
+            var order_num = $("#myInputReturn").val();
+            if (order_num > null) {
+                $.get("/SalesInvoices/GetorderDetailesSearch?order_num=" + order_num, null, DataBind2)
+                $("#invoicDetailes").empty();
+                $("#totalbody").empty();
+            function DataBind2(OrderList2) {
+                var indexBody = $("#invoicDetailes");
+                if (OrderList2.length > 0) {
+                    $("#detailsTableReturn tbody").empty();
+                    for (var i = 0; i < OrderList2.length; i++) {
+                        detailsTableBody = $("#detailsTableReturn tbody");
+                        var productItem = '<tr><td>' + OrderList2[i].Product_Name + '</td><td id="QuintityReturn">' + OrderList2[i].Quintity + '</td><td id="PriceReturn">' + OrderList2[i].Price + '</td><td id="AmountReturn">' + OrderList2[i].Amount + '</td><td>' + OrderList2[i].discount + '</td><td id="TaxReturn">' + OrderList2[i].Tax + '</td><td id="TotalReturn">' + OrderList2[i].Total + '</td><td hidden >' + OrderList2[i].Product_Id + '</td><td><p data-placement="top" data-toggle="tooltip" title="تعديل"><a id="PRowItem" href="#" data-itemId="0" onclick="EditReturnItem(' + OrderList2[i].Order_D_key + ')"  class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#editReturn"><span class="glyphicon glyphicon-pencil"></span></a></p></td>"<td><p data-placement="top" data-toggle="tooltip" title="حذف"><a href="#"  class="deleteItem btn btn-danger btn-xs" data-itemId="0" onclick=""  data-title="Delete" data-toggle="modal" ><span class="glyphicon glyphicon-trash"></span></a></p></td></tr>';
+                        detailsTableBody.append(productItem);
+                        wantedVal = parseFloat(wantedVal)+ parseFloat(OrderList2[i].Total);
+                        //var old = parseFloat($("#wantedVal").val());
+                        $("#wantedVal").val(wantedVal);
+                    }
+
+                  
+                }
+                else
+                {
+                    $("#detailsTableReturn tbody").empty();
+                    $("#invoicDetailes").empty();
+                    $("#totalbody").empty();
+                }
+            }
+            }
+            else
+            {
+                $("#detailsTableReturn tbody").empty();
+                $("#invoicDetailes").empty();
+                $("#totalbody").empty();
+            }
+     
+           
+        }
+        var o_d_k;
+        var o_id;
+        // delete order
+        function DeleteOrder(id) {
+            o_id = id;
+            $("#DeleteConfirmationInvoic").modal("show");
+
+
+        }
+        var ConfirmDeleteInvoice = function () {
+            var id = o_id;
+            $.ajax({
+                url: "/SalesReturns/DeleteOrder?id=" + id,
+                type: "post",
+                datatype: JSON,
+                success: function (data) {
+                    if (data.StatUs == 1) {
+                        $("#DeleteConfirmationInvoic").modal("hide");
+                        location.reload();
+                    }
+                    else
+                        alert("لم تتم عملية الحذف");
+                },
+                error: function (data) {
+                    alert(text(data.Message));
+                }
+            });
+
+
+        }
+        //delete product
+        function DeleteProduct(Order_Det_Key) {
+            o_d_k = Order_Det_Key;
+            $("#DeleteConfirmation").modal("show");
+
+        }
+        var ConfirmDelete = function () {
+            var Order_Det_Key = o_d_k;
+            $.ajax({
+                url: "/SalesReturns/DeleteProduct?Order_Det_Key=" + Order_Det_Key,
+                type: "post",
+                datatype: JSON,
+                success: function (data) {
+                    if (data.StatUs == 1) {
+                        $("#DeleteConfirmation").modal("hide");
+                        location.reload();
+                    }
+                    else
+                        alert("لم تتم عملية الحذف");
+                },
+                error: function (data) {
+                    alert(text(data.Message));
+                }
+            });
+
+
+        }
+
+        //UpdateProduct using to update row in salesr invoic return
+        function UpdateProduct(Order_Det_Key) {
+
+            $.ajax({
+                url: "/SalesReturns/UpdateProduct?Order_Det_Key=" + Order_Det_Key,
+                type: "post",
+                datatype: JSON,
+                success: function (data) {
+                    if (data.StatUs == 1) {
+                        alert("تمت عملية التعديل بنجاح");
+                        location.reload();
+                    }
+                    else
+                        alert("لم تتم عملية التعديل");
+                },
+                error: function (data) {
+                    alert(text(data.Message));
+                }
+            });
+        }
+
+        //using to get data of updating product and  put in update model
+
+        function EditProduct(Order_Det_Key) {
+            $.ajax({
+                url: "/SalesReturns/GetOrderDetailesByID?Order_Det_Key=" + Order_Det_Key,
+                type: "Get",
+                format: "Json",
+                success: function (data) {
+                    $("#productNameEdit").val(data.Product_Name);
+                    $("#Order_D_key").val(data.Order_D_key);
+                    $("#quintityEdit").val(data.Quintity);
+                    $("#priceEdit").val(data.Price);
+                    $("#amountEdit").val(data.Amount);
+                    $("#discountEdit").val(data.discount);
+                    $("#taxEdit").val(data.Tax);
+                    $("#totalEdit").val(data.Total);
+
+                },
+                error: function () {
+                    alert("error");
+                }
+
+            });
+        }
+        //using to save updaTE ROW 
+
+        function SaveUpdateProduct() {
+
+            var Order_Det_Key = $("#Order_D_key").val();
+            var Quintity = $("#quintityEdit").val();
+            var Price = $("#priceEdit").val();
+            var Amount = $("#amountEdit").val();
+            var discount = $("#discountEdit").val();
+            var Tax = $("#taxEdit").val();
+            var Total = $("#totalEdit").val();
+            if ($.trim($("#priceEdit").val()) == "" || $.trim($("#quintityEdit").val()) == "" || $.trim($("#amountEdit").val()) == "" || $.trim($("#discountEdit").val()) == "" || $.trim($("#taxEdit").val()) == "" || $.trim($("#totalEdit").val()) == "") return;
+            if ($.trim($("#priceEdit").val()) <= 0 || $.trim($("#quintityEdit").val()) <= 0 || $.trim($("#discountEdit").val()) < 0) {
+                alert("ادخل قيم صحيحة");
+                return;
+            }
+            var data = { Product_Name: "", Order_D_key: Order_Det_Key, Quintity: Quintity, Price: Price, Amount: Amount, discount: discount, Tax: Tax, Total: Total }
+
+            $.ajax({
+                url: "/SalesReturns/SaveUpdateProduct?Order_Det_Key=" + Order_Det_Key,
+                type: "post",
+                datatype: JSON,
+                data: data,
+                success: function (data) {
+                    if (data.StatUs == 1) {
+                        alert(data.Message);
+                        location.reload();
+                    }
+                    else
+                        alert(data.Message);
+                },
+                error: function (data) {
+                    alert(data.Message);
+                }
+
+
+            });
+
+        }
+        //USING TO EMPTING INVOICE
+        function clearPage() {
+            $("#invoichead").empty();
+            $("#invoicDetailes").empty();
+            $("#totalbody").empty();
+        }
+     //get max invoice
+        function getmax1() {
+            var order_num = $("#myInput").val();
+          
+            if (order_num > 0) {
+               // location.reload();
+                $.get("/SalesReturns/GetordersHeadSearch?order_num=" + order_num, null, DataBind)
+                $("#invoichead").empty();
+            }
+            else
+                {
+                $.get("/SalesReturns/Getorders", null, DataBind);
+                $("#invoichead").empty();
+            }
+            function DataBind(OrderList1) {
+                var indexBody = $("#invoichead");
+                if (OrderList1.length > 0)
+                {
+
+                    for (var i = 0; i < OrderList1.length; i++) {
+                        var Data = "<td>اسم العميل :" + OrderList1[i].First_Name + "</td>" +
+                                                 "<td>اسم البائع :" + OrderList1[i].Saler_Name + "</td>" +
+                                                  "<td id='invoicenum'>رقم الفاتورة :" + OrderList1[i].Order_Id + "</td>" +
+                                                   "<td id='invoicenum'>اسم الفرع :" + OrderList1[i].BranchName + "</td>" +
+                                                 "<td>تاريخ الفاتورة :" + OrderList1[i].Order_Date + "</td>";
+                        indexBody.append(Data);
+
+                    }
+                    $("#showmax").show();
+                    $("#empity").hide();
+                }
+                else
+                    $("#empity").show();
+
+            }
+        }
+        function getmax2() {
+            var totalBill = 0.0;
+            var totalbody = $("#totalbody");
+            var order_Id;
+
+            var order_num = $("#myInput").val();
+            if (order_num > null) {
+                $.get("/SalesReturns/GetorderDetailesSearch?order_num=" + order_num, null, DataBind2)
+                $("#invoicDetailes").empty();
+                $("#totalbody").empty();
+            }
+            else
+                {
+                $.get("/SalesReturns/GetorderDetailess", null, DataBind2)
+                $("#invoicDetailes").empty();
+                $("#totalbody").empty();
+                //$("#totalbody").append("<button onclick='GetNext()' class='btn btn-primary pull-right' style='margin-right:100px;'> <strong>الفاتورة التالية</strong></button>" +
+                //                  "<button onclick='GetPrefex()' class='btn btn-primary pull-right' style='margin-right:100px;'> <strong>الفاتورة السابقة</strong></button>");
+
+            }
+            function DataBind2(OrderList2) {
+                var indexBody = $("#invoicDetailes");
+                if (OrderList2.length > 0) {
+                    indexBody.append("<tr><th>الصنف</th><th>الكمية</th><th>سعر الوحدة</th><th>السعر</th><th>الخصم</th><th>الضريبة</th><th>الاجمالى</th></tr>");
+                    for (var i = 0; i < OrderList2.length; i++) {
+                        totalBill = totalBill + OrderList2[i].Total;
+                        var Data = "<tr><td style='display:none'>" + OrderList2[i].Order_D_key + "</td>" +
+                                                                                     "<td>" + OrderList2[i].Product_Name + "</td>" +
+                                                                                      "<td>" + OrderList2[i].Quintity + "</td>" +
+                                                                                      "<td>" + OrderList2[i].Price + "</td>" +
+                                                                                      "<td>" + OrderList2[i].Amount + "</td>" +
+                                                                                      "<td>" + OrderList2[i].discount + "</td>" +
+                                                                                      "<td>" + OrderList2[i].Tax + "</td>" +
+                                                                                      "<td>" + OrderList2[i].Total + "</td></tr>";
+
+                        order_Id = OrderList2[i].Order_Id;
+                        indexBody.append(Data);
+
+
+                    }
+                    totalbody.append("<span class='pull-right' style='margin-right:100px;'><strong>اجمالى الفاتورة :  </strong> " + totalBill + "</span>" +
+                                  "<button onclick='DeleteOrder(" + order_Id + ")' class='pull-right btn btn-danger pull-right' style='margin-right:100px;'> <strong>حذف   الفاتورة   </strong></button><br/><br/><br/>" +
+                                     "<a id='reportpdf' href='#' onclick='Exatractreport()' class='report'title='تحميل'  href=''></a>" +
+                                      "<a id='reportexel' class='report' href='#' title='تحميل' onclick='Exatractreport(Excel)'></a>" +
+
+                                       "<a id='reportWord' class='report' href='#' title='تحميل' onclick='Exatractreport(Word)'></a>" +
+
+                                       "<a id='reportImage'  class='report' href='#' title='تحميل' onclick='Exatractreport(Image)'></a>");
+                }
+            }
+        }
+ //get serach invoice
+        function getSearchHead(order_num) {
+            $.get("/SalesReturns/GetordersHeadSearch?order_num=" + order_num, null, DataBind)
+            function DataBind(OrderList1) {
+                var indexBody = $("#invoichead");
+                if (OrderList1.length > 0) {
+                    $("#showmax").show();
+                    $("#empity").hide();
+                    for (var i = 0; i < OrderList1.length; i++) {
+                        var Data = "<td>اسم العميل :" + OrderList1[i].First_Name + "</td>" +
+                        "<td>العنوان :" + OrderList1[i].Email + "</td>" +
+                         "<td>رقم الفاتورة :" + OrderList1[i].Order_Id + "</td>" +
+                        "<td>تاريخ الفاتورة :" + OrderList1[i].Order_Date + "</td>";
+                        indexBody.append(Data);
+
+                    }
+                }
+                else
+                    $("#empity").show();
+
+            }
+        }
+        function getSearchDetailes(order_num) {
+            var totalBill = 0.0;
+            var totalbody = $("#totalbody");
+            var order_Id;
+            $.get("/SalesReturns/GetorderDetailesSearch?order_num=" + order_num, null, DataBind2)
+            function DataBind2(OrderList2) {
+                if (OrderList2.length > 0) {
+                    var indexBody = $("#invoicDetailes");
+
+                    for (var i = 0; i < OrderList2.length; i++) {
+                        totalBill = totalBill + OrderList2[i].Total;
+                        var Data = "<tr><td style='display:none'>" + OrderList2[i].Order_D_key + "</td>" +
+                                                                                     "<td>" + OrderList2[i].Product_Name + "</td>" +
+                                                                                      "<td>" + OrderList2[i].Quintity + "</td>" +
+                                                                                      "<td>" + OrderList2[i].Price + "</td>" +
+                                                                                      "<td>" + OrderList2[i].Amount + "</td>" +
+                                                                                      "<td>" + OrderList2[i].discount + "</td>" +
+                                                                                      "<td>" + OrderList2[i].Tax + "</td>" +
+                                                                                      "<td>" + OrderList2[i].Total + "</td>" +
+                                                                                     "<td><p data-placement='top' data-toggle='tooltip' title='تعديل'><button onclick='EditProduct(" + OrderList2[i].Order_D_key + ")' class='btn btn-primary btn-xs' data-title='Edit' data-toggle='modal' data-target='#edit'><span class='glyphicon glyphicon-pencil'></span></button></p></td>" +
+                                                                                     "<td><p data-placement='top' data-toggle='tooltip' title='حذف'><button onclick='DeleteProduct(" + OrderList2[i].Order_D_key + ")' class='btn btn-danger btn-xs' data-title='Delete' data-toggle='modal' data-target='#delete'><span class='glyphicon glyphicon-trash'></span></button></p></td></tr>";
+
+                        order_Id = OrderList2[i].Order_Id;
+                        indexBody.append(Data);
+
+
+                    }
+                    totalbody.append("<span class='pull-right' style='margin-right:100px;'><strong>اجمالى الفاتورة :  </strong> " + totalBill + "</span>" +
+                                  "<button onclick='DeleteOrder(" + order_Id + ")' class='pull-right btn btn-danger pull-right' style='margin-right:100px;'> <strong>حذف   الفاتورة   </strong></button>");
+                }
+                }
+        }
+
+       
+        //x is invoice product name
+        var x;
+        //Show Modal.
+        function addNewOrder() {
+            //$("#name").val("اختر اسم العميل");
+            $("#Email").val("");
+            $("#newOrderModal").modal();
+        }
+
+        //SaveUpdateProduct
+        function SaveUpdateProductReturn() {
+            var productId = $("#productIdEditReturn").val();
+            var productName= $("#productNameEditReturn").val();
+            var Order_Det_Key = $("#Order_D_keyReturn").val();
+            var Quintity = $("#quintityEditReturn").val();
+            var Price = $("#priceEditReturn").val();
+            var Amount = $("#amountEditReturn").val();
+            var discount = $("#discountEditReturn").val();
+            var Tax = $("#taxEditReturn").val();
+            var Total = $("#totalEditReturn").val();
+            //update row
+            var $self = $("#PRowItem");
+            if ($("#PRowItem").attr('data-itemId') == "0") {
+                $("#QuintityReturn").text(Quintity);
+                $("#PriceReturn").text(Price);
+                $("#AmountReturn").text(Amount);
+                $("#TaxReturn").text(Tax);
+                $("#TotalReturn").text(Total);
+                };
+            //$(this).find('td:eq(0)').html()
+            //var productItem = '<tr><td>' + productName + '</td><td>' + Quintity + '</td><td>' + Price + '</td><td>' + Amount + '</td><td>' + discount + '</td><td>' + Tax + '</td><td>' + Total + '</td><td hidden >' + productId + '</td><td><p data-placement="top" data-toggle="tooltip" title="تعديل"><button " class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#editReturn"><span class="glyphicon glyphicon-pencil"></span></button></p></td>"<td><p data-placement="top" data-toggle="tooltip" title="حذف"><a href="#"  class="deleteItem btn btn-danger btn-xs" data-itemId="0" onclick="DelteReturnItem()"  data-title="Delete" data-toggle="modal" ><span class="glyphicon glyphicon-trash"></span></a></p></td></tr>';
+         
+            //detailsTableBody.append(productItem);
+
+            $('#editReturn').hide();
+            UpdateEditWantedValue();
+        }
+
+        //Add Multiple Order.
+        $("#addToList").click(function (e) {
+            e.preventDefault();
+
+            if ($.trim($("#productName").val()) == "" || $.trim($("#price").val()) == "" || $.trim($("#quintity").val()) == "" || $.trim($("#amount").val()) == "" || $.trim($("#discount").val()) == "" || $.trim($("#tax").val()) == "" || $.trim($("#price").val()) == "" || $.trim($("#total").val()) == "") return;
+            if ($.trim($("#price").val()) <= 0 || $.trim($("#quintity").val()) <= 0 || $.trim($("#discount").val()) < 0) {
+                alert("ادخل قيم صحيحة");
+
+                return;
+            }
+            x = $("#productName").val();
+            var productName = $("#productName").val(),
+                price = $("#price").val(),
+                quintity = $("#quintity").val(),
+                   amount = $("#amount").val(),
+                discount = $("#discount").val(),
+                   tax = $("#tax").val(),
+                total = $("#total").val(),
+                detailsTableBody = $("#detailsTable tbody");
+
+            var productItem = '<tr><td>' + productName + '</td><td>' + quintity + '</td><td>' + price + '</td><td>' + amount + '</td><td>' + discount + '</td><td>' + tax + '</td><td>' + total + '</td><td><a data-itemId="0" href="#" class="deleteItem">حذف</a></td></tr>';
+            detailsTableBody.append(productItem);
+            clearItem();
+        });
+        //After Add A New Order In The List, Clear Clean The Form For Add More Order.
+        function clearItem() {
+            $("#productName").val("اختر اسم الصنف");
+            $("#price").val(0);
+            $("#quintity").val(0);
+            $("#amount").val(0);
+            $("#discount").val(0);
+            $("#tax").val(0);
+            $("#total").val(0);
+        }
+        // After Add A New Order In The List, If You Want, You Can Remove It.
+        $(document).on('click', 'a.deleteItem', function (e) {
+            e.preventDefault();
+            var val = 0;
+            var $self = $(this);
+            if ($(this).attr('data-itemId') == "0") {
+                $(this).parents('tr').css("background-color", "#ff6347").fadeOut(800, function () {
+                    val = parseFloat($(this).find('td:eq(6)').html());
+                    UpdateWantedValue(val);
+                    $(this).remove();
+                });
+            }
+
+              
+
+           
+        });
+
+        function UpdateWantedValue(val)
+        {
+            var NewWantedVal = 0;
+            var old = parseFloat($("#wantedVal").val());
+             n = old - val;
+             $("#wantedVal").val(NewWantedVal);
+        }
+
+        function UpdateEditWantedValue() {
+            var wantedval = 0;
+            $.each($("#detailsTableReturn tbody tr"), function () {
+                wantedval = wantedval + parseFloat($(this).find('td:eq(6)').html());
+            });
+            $("#wantedVal").val(wantedval);
+        }
+        function EditReturnItem(Order_Det_Key) {
+           
+                $.ajax({
+                    url: "/SalesInvoices/GetOrderDetailesByID?Order_Det_Key=" + Order_Det_Key,
+                    type: "Get",
+                    format: "Json",
+                    success: function (data) {
+                        
+                        $("#productIdEditReturn").val(data.Product_Id);
+                        $("#productNameEditReturn").val(data.Product_Name);
+                        $("#Order_D_keyReturn").val(data.Order_D_key);
+                        $("#quintityEditReturn").val(data.Quintity);
+                        $("#priceEditReturn").val(data.Price);
+                        $("#amountEditReturn").val(data.Amount);
+                        $("#discountEditReturn").val(data.discount);
+                        $("#taxEditReturn").val(data.Tax);
+                        $("#totalEditReturn").val(data.Total);
+
+                    },
+                    error: function () {
+                        alert("error");
+                    }
+
+                });
+
+        }
+        //After Click Save Button Pass All Data View To Controller For Save Database
+        function saveOrder(data) {
+     
+            return $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                type: 'POST',
+                url: "/SalesReturns/SaveOrder",
+                data: data,
+                success: function (result) {
+                    alert(result);
+                    location.reload();
+                },
+                error: function () {
+                    alert("Error!")
+                }
+            });
+        }
+
+        //Collect Multiple Order List For Pass To Controller
+        $("#SaveSalesReturn").click(function (e) {
+              e.preventDefault();
+            var orderArrReturn = [];
+            orderArrReturn.length = 0;
+            var TotalPrice = 0;
+            var TotalReturn= 0;
+            var pay1Val = 0;
+            var pay2Val = 0;
+            if ($("#Pay1Val").val() == "") {
+                pay1Val = 0;
+            }
+            else {
+                pay1Val = parseFloat($("#Pay1Val").val());
+            }
+            if ($("#Pay2Val").val() == "") {
+                pay2Val = 0;
+            }
+            else {
+                pay2Val = parseFloat($("#Pay2Val").val());
+            }
+            $.each($("#detailsTableReturn tbody tr"), function () {
+                orderArrReturn.push({
+                    productName: $(this).find('td:eq(0)').html(),
+                    quintity: $(this).find('td:eq(1)').html(),
+                    price: $(this).find('td:eq(2)').html(),
+                    amount: $(this).find('td:eq(3)').html(),
+                    discount: $(this).find('td:eq(4)').html(),
+                    tax: $(this).find('td:eq(5)').html(),
+                    total: $(this).find('td:eq(6)').html(),
+                    Product_ID: $(this).find('td:eq(7)').html()
+                });
+                TotalPrice = TotalPrice + parseFloat($(this).find('td:eq(6)').html());
+            });
+            TotalReturn = parseFloat(pay1Val) + parseFloat(pay2Val);
+            if (parseFloat(TotalReturn) != parseFloat(TotalPrice)) {
+                alert("قيمة المدفوع لا تساوى قيمة المستحق");
+                return;
+
+            }
+            var data = JSON.stringify({
+                name: $("#name").val(),
+                Pay_ID1: $("#PayName1").val(),
+                Pay_ID2: $("#PayName2").val(),
+                Pay1Val: pay1Val,
+                Pay2Val: pay2Val,
+                Sales_Number: $("#myInputReturn").val(),
+                OrderDate: $("#date-picker-example").val(),
+                X: x,
+                order: orderArrReturn
+            });
+
+            $.when(saveOrder(data)).then(function (response) {
+                console.log(response);
+            }).fail(function (err) {
+                console.log(err);
+            });
+        });
+
+        //valadaation function
+        $("#quintity,#price,#discount,#quintityEdit,#priceEdit,#discountEdit,#quintityEditReturn,#priceEditReturn,#discountEditReturn").on('change keyup', function (event) {
+            if (event.shiftKey) {
+                event.preventDefault();
+            }
+
+            if (event.keyCode == 46 || event.keyCode == 8) {
+            }
+            else {
+                if (event.keyCode < 95) {
+                    if (event.keyCode < 48 || event.keyCode > 57) {
+                        event.preventDefault();
+                    }
+                }
+                else {
+                    if (event.keyCode < 96 || event.keyCode > 105) {
+                        event.preventDefault();
+                    }
+                }
+            }
+        });
+        //quantity
+        $('#quintity,#price').on('change keyup', function () {
+            var price = $("#price").val();
+            var Quintity = $("#quintity").val();
+            var amount = Quintity * price;
+            var discount = $("#discount").val();
+
+            if (amount >= 0) {
+                $("#amount").val(amount);
+                var tax = (amount - discount) * 0.05;
+                if (tax >= 0) {
+                    $("#tax").val(tax);
+                    var total = amount - discount + tax;
+                    $("#total").val(total);
+                }
+            }
+
+        });
+        //tax
+        $('#discount').on('change keyup', function () {
+            var amount = $("#amount").val();
+            var discount = $("#discount").val();
+            var tax = (amount - discount) * 0.05;
+            if (tax >= 0) {
+                $("#tax").val(tax);
+                var total = amount - discount + tax;
+                $("#total").val(total);
+            }
+
+        });
+        //
+        //positive number
+        $('#price').on('change keyup', function () {
+            if ($('#price').val() != "") {
+                if ($('#Field').val() < 0) {
+                    alert("insert positve");
+                }
+            }
+        });
+
+
+
+
+        if ($('#price,#discount,#quintity,#priceEdit,#discountEdit,#quintityEdit,#priceEditReturn,#discountEditReturn,#quintityEditReturn').val() != "") {
+            if ($('#Field').val().match('^(0|[1-9][0-9]*)$')) {
+                alert("Field must be numeric");
+                success = false;
+            }
+        }
+        //////////////////////////////////////////////////////////////////////////
+  
+        //quantity
+        $('#quintityEdit,#priceEdit').on('change keyup', function () {
+
+            var price = $("#priceEdit").val();
+            var amount = this.value * price;
+            var discount = $("#discountEdit").val();
+
+            if (amount >= 0) {
+                $("#amountEdit").val(amount);
+                var tax = (amount - discount) * 0.05;
+                if (tax >= 0) {
+                    $("#taxEdit").val(tax);
+                    var total = amount - discount + tax;
+                    $("#totalEdit").val(total);
+                }
+            }
+
+        });
+        $('#quintityEditReturn,#priceEditReturn').on('change keyup', function () {
+
+            var price = $("#priceEditReturn").val();
+            var quintity = $("#quintityEditReturn").val();
+            var amount = quintity * price;
+            var discount = $("#discountEditReturn").val();
+
+            if (amount >= 0) {
+                $("#amountEditReturn").val(amount);
+                var tax = (amount - discount) * 0.05;
+                if (tax >= 0) {
+                    $("#taxEditReturn").val(tax);
+                    var total = amount - discount + tax;
+                    $("#totalEditReturn").val(total);
+                }
+            }
+
+        });
+        //tax
+        $('#discountEdit').on('change keyup', function () {
+            var amount = $("#amountEdit").val();
+            var discount = $("#discountEdit").val();
+            var tax = (amount - discount) * 0.05;
+            if (tax >= 0) {
+                $("#taxEdit").val(tax);
+                var total = amount - discount + tax;
+                $("#totalEdit").val(total);
+            }
+
+        });
+        function Exatractreport() {
+            var Sales = $("#myInput").val();
+            if (Sales > 0) {
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("ExportReportSearch", "SalesReturns")',
+                    dataType: 'html',
+                    data: ({
+                        Sales_num: Sales
+                    })
+                });
+            }
+            else {
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("ExportReportMax", "SalesReturns")',
+                    dataType: 'html'
+                });
+            }
+
+
+        }
+        getDate();
+        function getDate() {
+            var today = new Date();
+
+            document.getElementById("date-picker-example").value = today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()).slice(-2);
+        }
+
+    </script>
+
+
+}

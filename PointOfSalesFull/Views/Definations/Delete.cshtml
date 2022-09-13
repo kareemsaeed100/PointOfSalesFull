@@ -1,0 +1,164 @@
+﻿@model PointOfSalesFull.Models.Defination
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>حذف التعريفات</h2>
+
+<h3>هل انت متأكد من الحذف</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <label class="control-label col-md-2">
+                حساب العميل
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccCustomer)
+        </dd>
+
+        <dt>
+            <label class="control-label col-md-2">
+                حساب النقدية
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccCash)
+        </dd>
+
+        <dt>
+            <label class="control-label col-md-2">
+                حساب ايرادات المبيعات
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccSalesRevenues)
+        </dd>
+
+        <dt>
+            <label class="control-label col-md-2">
+                حساب الضريبة
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccTax)
+        </dd>
+
+        <dt>
+            <label class="control-label col-md-2">
+                حساب تكلفة المبيعات
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccSalesCost)
+        </dd>
+
+        <dt>
+            <label class="control-label col-md-2">
+                حساب المخزون
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccInv)
+        </dd>
+
+        <dt>
+            <label class="control-label col-md-2">
+                حساب البنك
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccBank)
+        </dd>
+
+        <dt>
+            <label class="control-label col-md-2">
+                حساب المورد
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccSublier)
+        </dd>
+
+        <dt>
+            <label class="control-label col-md-2">
+                فاتورة المشتريات
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PureAcc)
+        </dd>
+
+        <dt>
+            <label class="control-label col-md-2">
+                فاتورة مرتجعات المشتريات
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PureRAcc)
+        </dd>
+
+        <dt>
+            <label class="control-label col-md-2">
+                فاتورة المبيعات
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SalesAcc)
+        </dd>
+
+        <dt>
+            <label class="control-label col-md-2">
+                فاتورة مرتجعات المبيعات
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SalesRAcc)
+        </dd>
+
+        <dt>
+            <label class="control-label col-md-2">
+                سند قبض
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReciptAcc)
+        </dd>
+
+        <dt>
+            <label class="control-label col-md-2">
+                سند صرف
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PayMentAcc)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="حذف" class="btn btn-default" /> |
+            @Html.ActionLink("الرجوع الى القائمة", "Index")
+        </div>
+    }
+</div>

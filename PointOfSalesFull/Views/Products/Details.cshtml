@@ -1,0 +1,106 @@
+﻿@model PointOfSalesFull.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>تفاصيل المنج</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            الفئة
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category.Cat_Descrption)
+        </dd>
+
+        <dt>
+            اسم المنتج
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product_Name)
+        </dd>
+
+        <dt>
+            الكمية
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quintity)
+        </dd>
+
+        <dt>
+            السعر
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            صورة المنج
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+
+        <dt>
+            الماركة
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brand_Id)
+        </dd>
+
+        <dt>
+            وحدة القياس
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Uint_Id)
+        </dd>
+
+        <dt>
+            قابل للبيع
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.For_Sale)
+        </dd>
+
+        <dt>
+            خاضع للضريبة
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tax_State)
+        </dd>
+
+        <dt>
+            قابل للارجاع
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Return)
+        </dd>
+
+        <dt>
+            توقيف المنتج
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mov_State)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("تعديل", "Edit", new { id = Model.Product_ID }) |
+    @Html.ActionLink("الرجوع الى القائمة", "Index")
+</p>

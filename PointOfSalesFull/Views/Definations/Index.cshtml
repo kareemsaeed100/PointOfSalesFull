@@ -1,0 +1,149 @@
+﻿@model IEnumerable<PointOfSalesFull.Models.Defination>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <h2 align="center" class="panel-title ">
+                <strong style="text-align:center;color:red;font:bolder">التعريفات العامة</strong>
+            </h2>
+
+            <p class="btn btn-default pull-right" style="margin-right:10px;color:white">
+                @Html.ActionLink("اضافة تعريفات", "Create")
+            </p>
+</div>
+        </div>
+            <table class="table">
+                <tr>
+                    <th>
+
+                        حساب العميل
+
+                    </th>
+                    <th>
+
+                        حساب النقدية
+
+                    </th>
+                    <th>
+
+                        حساب ايرادات المبيعات
+
+                    </th>
+                    <th>
+
+                        حساب الضريبة
+
+                    </th>
+                    <th>
+
+                        حساب تكلفة المبيعات
+
+                    </th>
+                    <th>
+
+                        حساب المخزون
+
+                    </th>
+                    <th>
+
+                        حساب البنك
+
+                    </th>
+                    <th>
+
+                        حساب المورد
+
+                    </th>
+                    <th>
+
+                        فاتورة المشتريات
+
+                    </th>
+                    <th>
+
+                        فاتورة مرتجعات المشتريات
+
+                    </th>
+                    <th>
+
+                        فاتورة المبيعات
+
+                    </th>
+                    <th>
+
+                        فاتورة مرتجعات المبيعات
+
+                    </th>
+                    <th>
+
+                        سند قبض
+
+                    </th>
+                    <th>
+
+                        سند صرف
+
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AccCustomer)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AccCash
+                       )
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AccSalesRevenues)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AccTax)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AccSalesCost)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AccInv)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AccBank)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AccSublier)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PureAcc)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PureRAcc)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SalesAcc)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SalesRAcc)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ReciptAcc)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PayMentAcc)
+                        </td>
+                        <td>
+                            @Html.ActionLink("تعديل", "Edit", new { id = item.Key }) |
+                            @Html.ActionLink("تفاصيل", "Details", new { id = item.Key }) |
+                            @Html.ActionLink("حذف", "Delete", new { id = item.Key })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+</div>

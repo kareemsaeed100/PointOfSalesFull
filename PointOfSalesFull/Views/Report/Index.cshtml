@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <h2 align="center" class="panel-title ">
+                <strong style="text-align:center;color:red">التقارير</strong>
+            </h2>
+
+        </div>
+    </div>
+
+    <div class="panel-heading col-md-6">
+            <div class="row">
+                <h2 class="panel-title ">
+                    <strong style="text-align:center;color:red">نوع التقرير</strong>
+                </h2>
+                @*------------------------------------------------------------*@
+                <!-- Default checked -->
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+                    <label class="custom-control-label" for="defaultChecked">سندات الصرف</label>
+                </div>
+                <!-- Default unchecked -->
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                    <label class="custom-control-label" for="defaultUnchecked">فواتير المشتريات</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                    <label class="custom-control-label" for="defaultUnchecked">فواتير مردودات المشتريات</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                    <label class="custom-control-label" for="defaultUnchecked">فواتير المبيعات</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                    <label class="custom-control-label" for="defaultUnchecked">فواتير مرتجعات المبيعات</label>
+                </div>
+                @*------------------------------------------------------------*@
+            </div>
+        </div>
+ 
+   <div class="panel-heading col-md-6">
+       <div class="row">
+           <h2 class="panel-title ">
+               <strong style="text-align:center;color:red">خيارات التقرير</strong>
+           </h2>
+           <div class="form-horizontal">
+               <div>
+                   <div class="form-group col-md-12">
+                       <div class="col-md-2">
+                           <label class="control-label">
+                               التاريخ
+                           </label>
+                       </div>
+                      
+                       <div class="col-md-6">
+                           <table>
+                            <thead>
+                                <tr>
+                                <td>من</td>
+                                <td>الى</td>
+                                </tr>
+                           
+                            </thead>
+                               <tbody>
+                                   <tr>
+                                       <td><input dir="rtl" placeholder="اختر التاريخ" name="vch_DatG" type="date" id="date-picker-example" class="form-control datepicker"></td>
+                                       <td><input dir="rtl" placeholder="اختر التاريخ" name="vch_DatG" type="date" id="date-picker-example" class="form-control datepicker"></td>
+                                   </tr>
+                               </tbody>
+                           </table>
+                     
+                       </div>
+
+                   </div>
+               </div>
+
+           </div>
+       </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+﻿@model PointOfSalesFull.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>انشاء حساب لمستخدم</h2>
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div class="form-group">
+        <label class="control-label col-md-2">
+           البريد الالكترونى
+        </label>
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">
+            كلمة السر
+        </label>
+        <div class="col-md-10">
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">
+         تأكيد كلمة السر
+        </label>
+        <div class="col-md-10">
+            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="اضافة" />
+        </div>
+    </div>
+}
+<div>
+    @Html.ActionLink("الرجوع الى القائمة", "UsersWithRoles", "Roles")
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

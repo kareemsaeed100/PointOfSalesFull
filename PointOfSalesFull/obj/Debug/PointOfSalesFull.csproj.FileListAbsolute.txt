@@ -1,0 +1,357 @@
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.csprojResolveAssemblyReference.cache
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\ApplicationInsights.config
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\roslyn\csc.exe
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\roslyn\System.Collections.Immutable.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\roslyn\System.Reflection.Metadata.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\roslyn\vbc.exe
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\roslyn\VBCSCompiler.exe
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\roslyn\VBCSCompiler.exe.config
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\PointOfSalesFull.dll.config
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\PointOfSalesFull.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\PointOfSalesFull.pdb
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Antlr3.Runtime.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\EntityFramework.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\EntityFramework.SqlServer.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.Agent.Intercept.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.DependencyCollector.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.Web.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.WindowsServer.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.ApplicationInsights.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.Core.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Cookies.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Facebook.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Google.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.OAuth.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Twitter.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Web.Infrastructure.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Newtonsoft.Json.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Owin.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Net.Http.Formatting.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Helpers.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Http.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Http.WebHost.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Mvc.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Optimization.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Razor.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.Deployment.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.Razor.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\WebGrease.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.DependencyCollector.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.Web.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.WindowsServer.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.ApplicationInsights.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Helpers.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Mvc.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Optimization.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Razor.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.Deployment.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.Razor.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Antlr3.Runtime.pdb
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Newtonsoft.Json.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Net.Http.Formatting.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Http.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Http.WebHost.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\EntityFramework.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\EntityFramework.SqlServer.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.Core.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Facebook.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Cookies.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.OAuth.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Google.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Twitter.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.pdb
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.InitialCreate.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.csproj.GenerateResource.Cache
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.addoredrnumbertoreturninvoice.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.editaccVchr.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.AccStocTable.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateAccStocTable.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateDefinationTable.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateDefinationTable1.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateDefinationTable2.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateDefinationTable3.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updatePayMode.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateAccVchr.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateaccvchaddsubandpurnum.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateaccvchaddsubandpurnum2.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.editaccvchrequired.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updataccvchr123.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.addnewacccvchrs.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.vchrtable.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.deletevchrtable.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.addthd_movToAcctransHed.resources
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportSource.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.Shared.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\cources\mvc\MvcFinalProject\PointOfSalesFull\PointOfSalesFull\bin\stdole.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\ApplicationInsights.config
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\roslyn\csc.exe
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\roslyn\vbc.exe
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\PointOfSalesFull.dll.config
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\PointOfSalesFull.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\PointOfSalesFull.pdb
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Antlr3.Runtime.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\EntityFramework.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\EntityFramework.SqlServer.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.Web.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Newtonsoft.Json.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Owin.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Net.Http.Formatting.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Helpers.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Http.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Http.WebHost.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Mvc.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Optimization.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Razor.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\WebGrease.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\stdole.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.Web.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Helpers.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Mvc.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Optimization.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Razor.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Antlr3.Runtime.pdb
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Newtonsoft.Json.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Net.Http.Formatting.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Http.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Http.WebHost.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\EntityFramework.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\EntityFramework.SqlServer.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.csprojResolveAssemblyReference.cache
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.InitialCreate.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.addoredrnumbertoreturninvoice.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.editaccVchr.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.AccStocTable.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateAccStocTable.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateDefinationTable.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateDefinationTable1.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateDefinationTable2.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateDefinationTable3.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updatePayMode.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateAccVchr.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateaccvchaddsubandpurnum.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateaccvchaddsubandpurnum2.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.editaccvchrequired.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updataccvchr123.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.addnewacccvchrs.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.vchrtable.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.deletevchrtable.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.addthd_movToAcctransHed.resources
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.csproj.GenerateResource.Cache
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.dll
+C:\Users\Ahmed_c\Desktop\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.pdb
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\ApplicationInsights.config
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\roslyn\csc.exe
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\roslyn\System.Collections.Immutable.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\roslyn\System.Reflection.Metadata.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\roslyn\vbc.exe
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\roslyn\VBCSCompiler.exe
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\roslyn\VBCSCompiler.exe.config
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\PointOfSalesFull.dll.config
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\PointOfSalesFull.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\PointOfSalesFull.pdb
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Antlr3.Runtime.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.CrystalReports.Engine.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportSource.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.Shared.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\EntityFramework.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\EntityFramework.SqlServer.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.Agent.Intercept.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.DependencyCollector.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.Web.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.WindowsServer.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.ApplicationInsights.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.Core.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Cookies.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Facebook.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Google.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.OAuth.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Twitter.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Web.Infrastructure.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Newtonsoft.Json.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Owin.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Net.Http.Formatting.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Helpers.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Http.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Http.WebHost.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Mvc.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Optimization.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Razor.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.Deployment.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.Razor.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\WebGrease.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\stdole.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.DependencyCollector.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.ServerTelemetryChannel.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.Web.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AI.WindowsServer.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.ApplicationInsights.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Helpers.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Mvc.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Optimization.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Razor.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.Deployment.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.WebPages.Razor.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Antlr3.Runtime.pdb
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Newtonsoft.Json.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Net.Http.Formatting.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Http.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\System.Web.Http.WebHost.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\EntityFramework.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\EntityFramework.SqlServer.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.Core.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Facebook.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Cookies.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.OAuth.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Google.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.Twitter.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.csprojResolveAssemblyReference.cache
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.InitialCreate.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.addoredrnumbertoreturninvoice.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.editaccVchr.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.AccStocTable.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateAccStocTable.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateDefinationTable.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateDefinationTable1.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateDefinationTable2.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateDefinationTable3.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updatePayMode.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateAccVchr.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateaccvchaddsubandpurnum.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updateaccvchaddsubandpurnum2.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.editaccvchrequired.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.updataccvchr123.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.addnewacccvchrs.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.vchrtable.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.deletevchrtable.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.Migrations.addthd_movToAcctransHed.resources
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.csproj.GenerateResource.Cache
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.dll
+H:\Hard PC\Cources\Full-Stack\Kareem Projects\Back End\POS Exa\PointOfSalesFullh\PointOfSalesFull\PointOfSalesFull\obj\Debug\PointOfSalesFull.pdb

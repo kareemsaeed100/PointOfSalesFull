@@ -1,0 +1,77 @@
+﻿@model IEnumerable<PointOfSalesFull.Models.Brand>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <h2 align="center" class="panel-title ">
+                <strong style="text-align:center;color:red;font:bolder">العلامات التجارية</strong>
+            </h2>
+
+            <p class="btn btn-default pull-right" style="margin-right:10px;color:white">
+                @Html.ActionLink("انشاء علامة تجارية", "Create")
+            </p>
+            </div>
+        </div>
+            <table class="table">
+                <tr>
+                    <th>
+
+                        اسم العلامة التجارية عربى
+
+                    </th>
+                    <th>
+                        اسم العلامة التجارية انجليزى
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Brand_Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Brand_EName)
+                        </td>
+                        <td>
+                            @Html.ActionLink("تعديل", "Edit", new { id = item.Brand_ID }) |
+                            @Html.ActionLink("تفاصيل", "Details", new { id = item.Brand_ID }) |
+                            @Html.ActionLink("حذف", "Delete", new { id = item.Brand_ID })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+            @*<p>
+                <a class="btn btn-success" href="@Url.Action("ExportReport")">استخراج تقرير</a>
+            </p>*@
+    <div class="panel-footer">
+        <div class="row">
+            <a id="reportpdf" class="report" href="#" onclick="Exatractreport('Pdf')"></a>
+            <a id="reportexel" class="report" href="#" onclick="Exatractreport('Excel')"></a>
+
+            <a id="reportWord" class="report" href="#" onclick="Exatractreport('Word')"></a>
+
+            <a id="reportImage" class="report" href="#" onclick="Exatractreport('Image')"></a>
+        </div>
+    </div> 
+    </div>
+<script>
+    function Exatractreport(Type) {
+
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("ExportReport", "Brands")',
+                dataType: 'html',
+                data: ({
+                    ReportType: Type
+                })
+            });
+
+        }
+</script>

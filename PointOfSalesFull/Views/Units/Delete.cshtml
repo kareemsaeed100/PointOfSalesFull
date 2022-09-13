@@ -1,0 +1,41 @@
+﻿@model PointOfSalesFull.Models.Units
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>هل انت متأكد من الحذف؟</h3>
+<div>
+    <h4>Units</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Unit_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unit_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Unit_EName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unit_EName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("الرجوع الى القائمة", "Index")
+        </div>
+    }
+</div>

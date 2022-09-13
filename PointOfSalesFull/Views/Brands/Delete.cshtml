@@ -1,0 +1,44 @@
+﻿@model PointOfSalesFull.Models.Brand
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>حذف علامة تجارية</h2>
+
+<h3>هل انت متأكد من الحذف</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <label class="control-label col-md-2">
+                اسم العلامة التجارية عربى
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brand_Name)
+        </dd>
+
+        <dt>
+            <label class="control-label col-md-2">
+                اسم العلامة التجارية انجليزى
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brand_EName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="حذف" class="btn btn-default" /> |
+            @Html.ActionLink("الرجوع الى القائمة", "Index")
+        </div>
+    }
+</div>

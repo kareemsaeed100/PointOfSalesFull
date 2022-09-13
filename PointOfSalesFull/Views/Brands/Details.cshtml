@@ -1,0 +1,39 @@
+﻿@model PointOfSalesFull.Models.Brand
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>تعديل علامة تجارية</h2>
+
+<div>
+    <h4>Brand</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <label class="control-label col-md-2">
+                اسم العلامة التجارية عربى
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brand_Name)
+        </dd>
+
+        <dt>
+            <label class="control-label col-md-2">
+                اسم العلامة التجارية انجليزى
+            </label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brand_EName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("تعديل", "Edit", new { id = Model.Brand_ID }) |
+    @Html.ActionLink("الرجوع الى القائمة", "Index")
+</p>

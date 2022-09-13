@@ -1,0 +1,123 @@
+﻿@model PointOfSalesFull.Models.Customer
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+
+
+
+@using (Html.BeginForm("Create", "Customers", FormMethod.Post, new { enctype = "multipart/form-data" }))
+
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>انشاء عميل</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                الاسم الاول عربى
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.First_Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.First_Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+     
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                اسم العائلة عربى
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Last_Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Last_Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                الاسم الاول انجليزى
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.First_EName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.First_EName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                اسم العائلة انجليزى
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Last_EName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Last_EName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                اسم الجنسية
+            </label>
+            <div class="col-md-10">
+                @*@Html.EditorFor(model => model.Nat_ID, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.DropDownList("Nationality", null, "اختر اسم الجنسية", htmlAttributes: new { @id = "Nat_ID", @name = "Nat_ID", @class = "DropDown col-md-12" })
+                @Html.ValidationMessageFor(model => model.Nat_ID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">
+               رقم الهاتف
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Phon, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Phon, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                البريد الالكترونى
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group">
+            <label class="control-label col-md-2">
+               صورة العميل
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Image, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Image, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="حفظ" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("الرجوع الى القائمة", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
+
+
+
+
+

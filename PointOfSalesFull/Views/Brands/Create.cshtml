@@ -1,0 +1,53 @@
+﻿@model PointOfSalesFull.Models.Brand
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>اضافة علامة تجارية</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                اسم العلامة التجارية عربى
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Brand_Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Brand_Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                اسم العلامة التجارية انجليزى
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Brand_EName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Brand_EName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="حفظ" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("الرجوع الى القائمة", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
